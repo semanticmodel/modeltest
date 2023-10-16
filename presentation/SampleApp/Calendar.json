@@ -1,0 +1,51 @@
+{
+  "presentationTable" : {
+    "name" : "Calendar",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.Date"
+    }, {
+      "name" : "MonthNumber",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.MonthNumber"
+    }, {
+      "name" : "QuarterNumber",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.QuarterNumber"
+    }, {
+      "name" : "YearNumber",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.YearNumber"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.Month"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.Quarter"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Date.Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "CalendarHierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Dim Date",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Year",
+        "displayColumn" : "presentationColumn:SampleApp.Calendar.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Quarter",
+        "displayColumn" : "presentationColumn:SampleApp.Calendar.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Month",
+        "displayColumn" : "presentationColumn:SampleApp.Calendar.Month"
+      }, {
+        "name" : "Date",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Date",
+        "displayColumn" : "presentationColumn:SampleApp.Calendar.Date"
+      } ]
+    } ]
+  }
+}

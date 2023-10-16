@@ -1,0 +1,227 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Product",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PROD_KEY" ],
+    "logicalColumns" : [ {
+      "name" : "PROD_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.PROD_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Product",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.PROD_DSC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "ATTRIBUTE_2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.ATTRIBUTE_2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "ATTRIBUTE_1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.ATTRIBUTE_1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.TYPE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Type"
+    }, {
+      "name" : "LOB",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.LOB" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "LOB"
+    }, {
+      "name" : "Brand",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.BRAND" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Brand"
+    }, {
+      "name" : "SEQUENCE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.SEQUENCE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "BRAND_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.BRAND_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Brand"
+    }, {
+      "name" : "LOB_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.LOB_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "LOB"
+    }, {
+      "name" : "TYPE_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_PRODUCTS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D.TYPE_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Type"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_PRODUCTS_D",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleAppDatabase.BISAMPLE.SAMP_PRODUCTS_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Product",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PROD_KEY" ],
+        "displayKey" : "Product"
+      }, {
+        "name" : "Brand",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "BRAND_KEY" ],
+        "displayKey" : "Brand"
+      }, {
+        "name" : "LOB",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "LOB_KEY" ],
+        "displayKey" : "LOB"
+      }, {
+        "name" : "Type",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "TYPE_KEY" ],
+        "displayKey" : "Type"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "ProductHierarchy",
+        "levels" : [ "Total", "Brand", "LOB", "Type", "Product" ]
+      } ]
+    }
+  }
+}

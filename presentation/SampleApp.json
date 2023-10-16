@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "SampleApp",
+    "sourceBusinessModel" : "businessModel:SampleApp",
+    "tableOrder" : [ {
+      "name" : "presentationTable:SampleApp.Calendar"
+    }, {
+      "name" : "presentationTable:SampleApp.Product"
+    }, {
+      "name" : "presentationTable:SampleApp.Revenue"
+    } ]
+  }
+}
