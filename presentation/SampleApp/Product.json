@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Product",
+    "presentationColumns" : [ {
+      "name" : "PROD_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.PROD_KEY"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Product"
+    }, {
+      "name" : "ATTRIBUTE_2",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.ATTRIBUTE_2"
+    }, {
+      "name" : "ATTRIBUTE_1",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.ATTRIBUTE_1"
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Type"
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.LOB"
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Brand"
+    }, {
+      "name" : "SEQUENCE",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.SEQUENCE"
+    }, {
+      "name" : "BRAND_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.BRAND_KEY"
+    }, {
+      "name" : "LOB_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.LOB_KEY"
+    }, {
+      "name" : "TYPE_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.TYPE_KEY"
+    } ],
+    "hierarchies" : [ {
+      "name" : "ProductHierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Dim Product",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Brand",
+        "displayColumn" : "presentationColumn:SampleApp.Product.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.LOB",
+        "displayColumn" : "presentationColumn:SampleApp.Product.LOB"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Type",
+        "displayColumn" : "presentationColumn:SampleApp.Product.Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Product",
+        "displayColumn" : "presentationColumn:SampleApp.Product.Product"
+      } ]
+    } ]
+  }
+}
