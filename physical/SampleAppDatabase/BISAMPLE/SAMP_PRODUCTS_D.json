@@ -1,6 +1,7 @@
 {
   "physicalTable" : {
     "name" : "SAMP_PRODUCTS_D",
+    "description" : "This Is my first description.",
     "sourceType" : "TABLE",
     "physicalColumns" : [ {
       "name" : "PROD_KEY",
