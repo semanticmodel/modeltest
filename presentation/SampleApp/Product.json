@@ -1,6 +1,7 @@
 {
   "presentationTable" : {
     "name" : "Product",
+    "description" : "Test Product Description",
     "presentationColumns" : [ {
       "name" : "PROD_KEY",
       "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.PROD_KEY"
