@@ -32,19 +32,19 @@
       }, {
         "name" : "Year",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Year",
-        "displayColumn" : "presentationColumn:PaymentImpliciFact.Calendar.Year"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Calendar.Year"
       }, {
         "name" : "Quarter",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Quarter",
-        "displayColumn" : "presentationColumn:PaymentImpliciFact.Calendar.Quarter"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Calendar.Quarter"
       }, {
         "name" : "Month",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Month",
-        "displayColumn" : "presentationColumn:PaymentImpliciFact.Calendar.Month"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Calendar.Month"
       }, {
         "name" : "Date",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Date.Date",
-        "displayColumn" : "presentationColumn:PaymentImpliciFact.Calendar.Date"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Calendar.Date"
       } ]
     } ]
   }
