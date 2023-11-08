@@ -1,0 +1,43 @@
+{
+  "presentationTable" : {
+    "name" : "Product",
+    "description" : "Test Product Description",
+    "presentationColumns" : [ {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Product"
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Type"
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.LOB"
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Brand"
+    } ],
+    "hierarchies" : [ {
+      "name" : "ProductHierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Dim Product",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Brand",
+        "displayColumn" : "presentationColumn:PaymentImpliciFact.Product.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.LOB",
+        "displayColumn" : "presentationColumn:PaymentImpliciFact.Product.LOB"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Type",
+        "displayColumn" : "presentationColumn:PaymentImpliciFact.Product.Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Product",
+        "displayColumn" : "presentationColumn:PaymentImpliciFact.Product.Product"
+      } ]
+    } ]
+  }
+}

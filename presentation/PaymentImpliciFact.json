@@ -1,0 +1,16 @@
+{
+  "subjectArea" : {
+    "name" : "PaymentImpliciFact",
+    "sourceBusinessModel" : "businessModel:SampleApp",
+    "implicitFactColumn" : "logicalColumn:SampleApp.Fact Payment.Paid Amount",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PaymentImpliciFact.Calendar"
+    }, {
+      "name" : "presentationTable:PaymentImpliciFact.Product"
+    }, {
+      "name" : "presentationTable:PaymentImpliciFact.Revenue"
+    }, {
+      "name" : "presentationTable:PaymentImpliciFact.Payment"
+    } ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue",
+    "presentationColumns" : [ {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Fact Revenue.Revenue"
+    }, {
+      "name" : "Quantity",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Fact Revenue.Quantity"
+    }, {
+      "name" : "Discount",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Fact Revenue.Discount"
+    } ]
+  }
+}
