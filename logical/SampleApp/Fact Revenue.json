@@ -9,10 +9,10 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "SAMP_REVENUE_F",
+          "logicalTableSource" : "CLOUD_F_BILL_REV",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_REVENUE_F.REVENUE" ]
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_BILL_REV.REVENUE" ]
           }
         } ]
       },
@@ -27,10 +27,10 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "SAMP_REVENUE_F",
+          "logicalTableSource" : "CLOUD_F_BILL_REV",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_REVENUE_F.UNITS" ]
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_BILL_REV.UNITS" ]
           }
         } ]
       },
@@ -45,10 +45,10 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "SAMP_REVENUE_F",
+          "logicalTableSource" : "CLOUD_F_BILL_REV",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BISAMPLE.SAMP_REVENUE_F.DISCNT_VALUE" ]
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_BILL_REV.DISCNT_VALUE" ]
           }
         } ]
       },
@@ -58,10 +58,10 @@
       }
     } ],
     "logicalTableSources" : [ {
-      "name" : "SAMP_REVENUE_F",
+      "name" : "CLOUD_F_BILL_REV",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:SampleAppDatabase.BISAMPLE.SAMP_REVENUE_F" ]
+        "tables" : [ "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_BILL_REV" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,

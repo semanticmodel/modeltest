@@ -51,6 +51,52 @@
     "caching" : {
       "enable" : true,
       "expiryTime" : 0
-    }
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_GEOGRAPHY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_COST.ADDR_KEY",
+        "rightColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_GEOGRAPHY.ADDR_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_TIME_SMALL",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_COST.TIME_BILL_DT",
+        "rightColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_TIME_SMALL.DAY_DT"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_ORDERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_COST.ORDER_KEY",
+        "rightColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_ORDERS.ORDER_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_COST.PROD_ITEM_KEY",
+        "rightColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_PRODUCTS.PROD_ITEM_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_COST.CUST_NUMBER",
+        "rightColumn" : "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_D_CUSTOMERS.CUST_NUMBER"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
   }
 }

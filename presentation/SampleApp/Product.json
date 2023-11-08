@@ -3,17 +3,8 @@
     "name" : "Product",
     "description" : "Test Product Description",
     "presentationColumns" : [ {
-      "name" : "PROD_KEY",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.PROD_KEY"
-    }, {
       "name" : "Product",
       "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Product"
-    }, {
-      "name" : "ATTRIBUTE_2",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.ATTRIBUTE_2"
-    }, {
-      "name" : "ATTRIBUTE_1",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.ATTRIBUTE_1"
     }, {
       "name" : "Type",
       "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Type"
@@ -23,18 +14,6 @@
     }, {
       "name" : "Brand",
       "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.Brand"
-    }, {
-      "name" : "SEQUENCE",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.SEQUENCE"
-    }, {
-      "name" : "BRAND_KEY",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.BRAND_KEY"
-    }, {
-      "name" : "LOB_KEY",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.LOB_KEY"
-    }, {
-      "name" : "TYPE_KEY",
-      "sourceLogicalColumn" : "logicalColumn:SampleApp.Dim Product.TYPE_KEY"
     } ],
     "hierarchies" : [ {
       "name" : "ProductHierarchy",
