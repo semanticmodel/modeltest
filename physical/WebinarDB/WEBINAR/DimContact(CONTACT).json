@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DimContact(CONTACT)",
+    "sourceTable" : "physicalTable:WebinarDB.WEBINAR.CONTACT",
+    "overrideSourceCacheSetting" : false
+  }
+}

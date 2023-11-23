@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Contact",
+    "presentationColumns" : [ {
+      "name" : "Name",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimContact(CONTACT).Name"
+    } ],
+    "hierarchies" : [ {
+      "name" : "HContact",
+      "sourceLogicalTable" : "logicalTable:FactDuplicate1.DimContact(CONTACT)",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimContact(CONTACT).Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimContact(CONTACT).Detail",
+        "displayColumn" : "presentationColumn:FactDuplicate1.Contact.CONTACT_ID"
+      } ]
+    } ]
+  }
+}

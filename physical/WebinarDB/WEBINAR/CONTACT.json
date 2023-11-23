@@ -1,0 +1,21 @@
+{
+  "physicalTable" : {
+    "name" : "CONTACT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CONTACT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "CONTACT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

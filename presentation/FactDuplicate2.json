@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "FactDuplicate2",
+    "sourceBusinessModel" : "businessModel:FactDuplicate2",
+    "tableOrder" : [ {
+      "name" : "presentationTable:FactDuplicate2.Date"
+    }, {
+      "name" : "presentationTable:FactDuplicate2.Contact"
+    }, {
+      "name" : "presentationTable:FactDuplicate2.SR Metrics"
+    } ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "SR Metrics",
+    "presentationColumns" : [ {
+      "name" : "# SRs",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.FactLTSDup(SRVREQ_F).# SRs"
+    }, {
+      "name" : "Duration(minutes)",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.FactLTSDup(SRVREQ_F).Duration(minutes)"
+    }, {
+      "name" : "# Contacts",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.FactLTSDup(SRVREQ_F).# Contacts"
+    }, {
+      "name" : "Test SRContact",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.FactLTSDup(SRVREQ_F).Test SRContact"
+    } ]
+  }
+}

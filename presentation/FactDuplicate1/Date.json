@@ -1,0 +1,51 @@
+{
+  "presentationTable" : {
+    "name" : "Date",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Date"
+    }, {
+      "name" : "Month Num",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Month Num"
+    }, {
+      "name" : "Quarter Num",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Quarter Num"
+    }, {
+      "name" : "Year Num",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Year Num"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Month"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Quarter"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:FactDuplicate1.DimCalendarDay(DAY_D).Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "HCalendar",
+      "sourceLogicalTable" : "logicalTable:FactDuplicate1.DimCalendarDay(DAY_D)",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimCalendarDay(DAY_D).Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimCalendarDay(DAY_D).Year",
+        "displayColumn" : "presentationColumn:FactDuplicate1.Date.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimCalendarDay(DAY_D).Quarter",
+        "displayColumn" : "presentationColumn:FactDuplicate1.Date.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimCalendarDay(DAY_D).Month",
+        "displayColumn" : "presentationColumn:FactDuplicate1.Date.Month"
+      }, {
+        "name" : "Date",
+        "sourceLogicalLevel" : "logicalLevel:FactDuplicate1.DimCalendarDay(DAY_D).Date",
+        "displayColumn" : "presentationColumn:FactDuplicate1.Date.Date"
+      } ]
+    } ]
+  }
+}

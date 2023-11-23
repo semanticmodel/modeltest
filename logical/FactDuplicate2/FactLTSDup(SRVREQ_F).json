@@ -1,0 +1,109 @@
+{
+  "logicalTable" : {
+    "name" : "FactLTSDup(SRVREQ_F)",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "# SRs",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FactLTSDup(SRVREQ_F)",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F).SR_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "FactLTSDup(SRVREQ_F)_Contact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F).SR_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Duration(minutes)",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FactLTSDup(SRVREQ_F)",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F).DURATION_MINS" ]
+          }
+        }, {
+          "logicalTableSource" : "FactLTSDup(SRVREQ_F)_Contact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F).DURATION_MINS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# Contacts",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FactLTSDup(SRVREQ_F)",
+          "physicalExpression" : { }
+        }, {
+          "logicalTableSource" : "FactLTSDup(SRVREQ_F)_Contact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDB.WEBINAR.BridgeSR_Contact(SRVREQ_CONTACT).CONTACT_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "FactLTSDup(SRVREQ_F)",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F)" ]
+      },
+      "dataGranularity" : [ "logicalLevel:FactDuplicate2.DimCalendarDay(DAY_D).Date" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "FactLTSDup(SRVREQ_F)_Contact",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F)", "physicalTable:WebinarDB.WEBINAR.BridgeSR_Contact(SRVREQ_CONTACT)" ],
+        "logicalTableSourceJoins" : [ {
+          "leftTable" : "physicalTable:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F)",
+          "rightTable" : "physicalTable:WebinarDB.WEBINAR.BridgeSR_Contact(SRVREQ_CONTACT)",
+          "joinType" : "LEFT_OUTER",
+          "disable" : false
+        } ]
+      },
+      "dataGranularity" : [ "logicalLevel:FactDuplicate2.DimCalendarDay(DAY_D).Date", "logicalLevel:FactDuplicate2.DimContact(CONTACT).Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:FactDuplicate2.DimCalendarDay(DAY_D)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

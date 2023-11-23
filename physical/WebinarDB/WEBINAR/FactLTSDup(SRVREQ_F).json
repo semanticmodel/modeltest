@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "FactLTSDup(SRVREQ_F)",
+    "sourceTable" : "physicalTable:WebinarDB.WEBINAR.SRVREQ_F_BEFORETUNING",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:WebinarDB.WEBINAR.DimCalendarDay(DAY_D)",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F).OPEN_DT_ID",
+        "rightColumn" : "physicalColumn:WebinarDB.WEBINAR.DimCalendarDay(DAY_D).ROW_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:WebinarDB.WEBINAR.BridgeSR_Contact(SRVREQ_CONTACT)",
+      "useJoinExpression" : true,
+      "joinExpression" : {
+        "expressionTemplate" : "%1 =%2 and %3 ='Y'",
+        "expressionObjects" : [ "physicalColumn:WebinarDB.WEBINAR.FactLTSDup(SRVREQ_F).SR_ID", "physicalColumn:WebinarDB.WEBINAR.BridgeSR_Contact(SRVREQ_CONTACT).SR_ID", "physicalColumn:WebinarDB.WEBINAR.BridgeSR_Contact(SRVREQ_CONTACT).PRIMARY_FLG" ]
+      },
+      "joinType" : "LEFT_OUTER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "SRVREQ_CONTACT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "SR_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "CONTACT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "PRIMARY_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}
