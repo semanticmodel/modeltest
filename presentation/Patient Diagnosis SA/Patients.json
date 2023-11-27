@@ -1,7 +1,6 @@
 {
   "presentationTable" : {
     "name" : "Patients",
-    "description" : "Patients",
     "presentationColumns" : [ {
       "name" : "PATIENT ID",
       "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Patients.PATIENT ID"

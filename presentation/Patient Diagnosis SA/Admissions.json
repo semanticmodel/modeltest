@@ -1,7 +1,6 @@
 {
   "presentationTable" : {
     "name" : "Admissions",
-    "description" : "Admissions",
     "presentationColumns" : [ {
       "name" : "ADMISSIONS ID",
       "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Fact - Admissions.ADMISSIONS ID"
