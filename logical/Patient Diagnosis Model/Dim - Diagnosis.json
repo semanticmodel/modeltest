@@ -1,0 +1,59 @@
+{
+  "logicalTable" : {
+    "name" : "Dim - Diagnosis",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "DIAGNOSIS ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HLP_DIAGNOSES_DIM",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM.DIAGNOSIS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIAGNOSIS NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HLP_DIAGNOSES_DIM",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM.DIAGNOSIS_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIAGNOSIS DATE",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HLP_DIAGNOSES_DIM",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM.DIAGNOSIS_DATE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HLP_DIAGNOSES_DIM",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

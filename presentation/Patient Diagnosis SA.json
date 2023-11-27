@@ -1,0 +1,14 @@
+{
+  "subjectArea" : {
+    "name" : "Patient Diagnosis SA",
+    "description" : "Patient Diagnosis SA",
+    "sourceBusinessModel" : "businessModel:Patient Diagnosis Model",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Patient Diagnosis SA.Diagnosis"
+    }, {
+      "name" : "presentationTable:Patient Diagnosis SA.Patients"
+    }, {
+      "name" : "presentationTable:Patient Diagnosis SA.Admissions"
+    } ]
+  }
+}

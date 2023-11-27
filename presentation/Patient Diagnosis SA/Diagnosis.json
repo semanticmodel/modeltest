@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Diagnosis",
+    "presentationColumns" : [ {
+      "name" : "DIAGNOSIS ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Diagnosis.DIAGNOSIS ID"
+    }, {
+      "name" : "DIAGNOSIS NAME",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Diagnosis.DIAGNOSIS NAME"
+    }, {
+      "name" : "DIAGNOSIS DATE",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Diagnosis.DIAGNOSIS DATE"
+    } ]
+  }
+}

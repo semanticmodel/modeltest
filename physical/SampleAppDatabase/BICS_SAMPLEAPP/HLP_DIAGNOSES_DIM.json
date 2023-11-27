@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "HLP_DIAGNOSES_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DIAGNOSIS_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DIAGNOSIS_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "DIAGNOSIS_DATE",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}
