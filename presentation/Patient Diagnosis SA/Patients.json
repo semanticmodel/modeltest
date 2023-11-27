@@ -1,21 +1,22 @@
 {
   "presentationTable" : {
     "name" : "Patients",
+    "description" : "Patients",
     "presentationColumns" : [ {
       "name" : "PATIENT ID",
-      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim- Patients.PATIENT ID"
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Patients.PATIENT ID"
     }, {
       "name" : "PATIENT FIRST NAME",
-      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim- Patients.PATIENT FIRST NAME"
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Patients.PATIENT FIRST NAME"
     }, {
       "name" : "PATIENT LAST NAME",
-      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim- Patients.PATIENT LAST NAME"
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Patients.PATIENT LAST NAME"
     }, {
       "name" : "ADDRESS",
-      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim- Patients.ADDRESS"
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Patients.ADDRESS"
     }, {
       "name" : "ZIPCODE",
-      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim- Patients.ZIPCODE"
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Model.Dim - Patients.ZIPCODE"
     } ]
   }
 }

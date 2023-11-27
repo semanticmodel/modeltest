@@ -1,6 +1,7 @@
 {
   "logicalTable" : {
     "name" : "Dim - Diagnosis",
+    "description" : "Dim - Diagnosis",
     "type" : "DIMENSION",
     "logicalColumns" : [ {
       "name" : "DIAGNOSIS ID",
@@ -12,7 +13,7 @@
           "logicalTableSource" : "HLP_DIAGNOSES_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM.DIAGNOSIS_ID" ]
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_DIAGNOSES_DIM.DIAGNOSIS_ID" ]
           }
         } ]
       }
@@ -26,7 +27,7 @@
           "logicalTableSource" : "HLP_DIAGNOSES_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM.DIAGNOSIS_NAME" ]
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_DIAGNOSES_DIM.DIAGNOSIS_NAME" ]
           }
         } ]
       }
@@ -40,7 +41,7 @@
           "logicalTableSource" : "HLP_DIAGNOSES_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM.DIAGNOSIS_DATE" ]
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_DIAGNOSES_DIM.DIAGNOSIS_DATE" ]
           }
         } ]
       }
@@ -49,11 +50,12 @@
       "name" : "HLP_DIAGNOSES_DIM",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.HLP_DIAGNOSES_DIM" ]
+        "tables" : [ "physicalTable:SampleAppDatabase.WEBINAR.HLP_DIAGNOSES_DIM" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
-    } ]
+    } ],
+    "primaryKey" : [ "DIAGNOSIS ID" ]
   }
 }
