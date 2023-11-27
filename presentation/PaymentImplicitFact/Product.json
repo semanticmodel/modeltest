@@ -24,19 +24,19 @@
       }, {
         "name" : "Brand",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Brand",
-        "displayColumn" : "presentationColumn:SampleApp.Product.Brand"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Product.Brand"
       }, {
         "name" : "LOB",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.LOB",
-        "displayColumn" : "presentationColumn:SampleApp.Product.LOB"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Product.LOB"
       }, {
         "name" : "Type",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Type",
-        "displayColumn" : "presentationColumn:SampleApp.Product.Type"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Product.Type"
       }, {
         "name" : "Product",
         "sourceLogicalLevel" : "logicalLevel:SampleApp.Dim Product.Product",
-        "displayColumn" : "presentationColumn:SampleApp.Product.Product"
+        "displayColumn" : "presentationColumn:PaymentImplicitFact.Product.Product"
       } ]
     } ]
   }

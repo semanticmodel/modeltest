@@ -1,0 +1,46 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Payment",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Paid Amount",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_PAID_REV",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_PAID_REV.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_F_PAID_REV",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleAppDatabase.BICS_SAMPLEAPP.CLOUD_F_PAID_REV" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:SampleApp.Dim Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:SampleApp.Dim Product",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

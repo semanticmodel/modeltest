@@ -8,6 +8,8 @@
       "name" : "presentationTable:SampleApp.Product"
     }, {
       "name" : "presentationTable:SampleApp.Revenue"
+    }, {
+      "name" : "presentationTable:SampleApp.Payment"
     } ]
   }
 }

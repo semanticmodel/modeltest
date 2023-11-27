@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Payment",
+    "presentationColumns" : [ {
+      "name" : "Paid Amount",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Fact Payment.Paid Amount"
+    } ]
+  }
+}

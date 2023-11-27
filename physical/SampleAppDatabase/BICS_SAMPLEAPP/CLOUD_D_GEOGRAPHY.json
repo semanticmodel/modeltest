@@ -1,60 +1,64 @@
 {
   "physicalTable" : {
-    "name" : "SAMP_PRODUCTS_D",
-    "description" : "This Is my first description.",
+    "name" : "CLOUD_D_GEOGRAPHY",
     "sourceType" : "TABLE",
     "physicalColumns" : [ {
-      "name" : "PROD_KEY",
+      "name" : "AREA",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "ADDR_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "POSTAL_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "CITY",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "ADDRESS1",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "ADDRESS2",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "STATE_PROV",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "REGION",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "LATITUDE",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true
     }, {
-      "name" : "PROD_DSC",
-      "dataType" : "VARCHAR",
-      "length" : 255,
-      "nullable" : true
-    }, {
-      "name" : "ATTRIBUTE_2",
-      "dataType" : "VARCHAR",
-      "length" : 255,
-      "nullable" : true
-    }, {
-      "name" : "ATTRIBUTE_1",
-      "dataType" : "VARCHAR",
-      "length" : 255,
-      "nullable" : true
-    }, {
-      "name" : "TYPE",
-      "dataType" : "VARCHAR",
-      "length" : 255,
-      "nullable" : true
-    }, {
-      "name" : "LOB",
-      "dataType" : "VARCHAR",
-      "length" : 255,
-      "nullable" : true
-    }, {
-      "name" : "BRAND",
-      "dataType" : "VARCHAR",
-      "length" : 255,
-      "nullable" : true
-    }, {
-      "name" : "SEQUENCE",
-      "dataType" : "NUMERIC",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "BRAND_KEY",
-      "dataType" : "NUMERIC",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "LOB_KEY",
-      "dataType" : "NUMERIC",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "TYPE_KEY",
+      "name" : "LONGITUDE",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true
