@@ -13,7 +13,7 @@
           "logicalTableSource" : "HLP_PATIENT_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_PATIENT_DIM.PATIENT_ID" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM.PATIENT_ID" ]
           }
         } ]
       }
@@ -27,7 +27,7 @@
           "logicalTableSource" : "HLP_PATIENT_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_PATIENT_DIM.PATIENT_FIRST_NAME" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM.PATIENT_FIRST_NAME" ]
           }
         } ]
       }
@@ -41,7 +41,7 @@
           "logicalTableSource" : "HLP_PATIENT_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_PATIENT_DIM.PATIENT_LAST_NAME" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM.PATIENT_LAST_NAME" ]
           }
         } ]
       }
@@ -55,7 +55,7 @@
           "logicalTableSource" : "HLP_PATIENT_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_PATIENT_DIM.ADDRESS" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM.ADDRESS" ]
           }
         } ]
       }
@@ -69,7 +69,7 @@
           "logicalTableSource" : "HLP_PATIENT_DIM",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_PATIENT_DIM.ZIPCODE" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM.ZIPCODE" ]
           }
         } ]
       }
@@ -78,7 +78,7 @@
       "name" : "HLP_PATIENT_DIM",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:SampleAppDatabase.WEBINAR.HLP_PATIENT_DIM" ]
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,

@@ -4,11 +4,11 @@
     "description" : "Patient Diagnosis SA",
     "sourceBusinessModel" : "businessModel:Patient Diagnosis Model",
     "tableOrder" : [ {
-      "name" : "presentationTable:Patient Diagnosis SA.Patients"
+      "name" : "presentationTable:Patient Diagnosis SA.Dim - Diagnosis"
     }, {
-      "name" : "presentationTable:Patient Diagnosis SA.Diagnosis"
+      "name" : "presentationTable:Patient Diagnosis SA.Dim - Patients"
     }, {
-      "name" : "presentationTable:Patient Diagnosis SA.Admissions"
+      "name" : "presentationTable:Patient Diagnosis SA.Fact - Admissions"
     } ]
   }
 }

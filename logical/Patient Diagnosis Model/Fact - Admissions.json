@@ -13,7 +13,7 @@
           "logicalTableSource" : "HLP_ADMISSIONS_FACT",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_ADMISSIONS_FACT.ADMISSIONS_ID" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.ADMISSIONS_ID" ]
           }
         } ]
       }
@@ -27,7 +27,7 @@
           "logicalTableSource" : "HLP_ADMISSIONS_FACT",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_ADMISSIONS_FACT.ADMISSION_DATE" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.ADMISSION_DATE" ]
           }
         } ]
       }
@@ -41,7 +41,7 @@
           "logicalTableSource" : "HLP_ADMISSIONS_FACT",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_ADMISSIONS_FACT.PATIENT_ID" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.PATIENT_ID" ]
           }
         } ]
       }
@@ -55,7 +55,7 @@
           "logicalTableSource" : "HLP_ADMISSIONS_FACT",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_ADMISSIONS_FACT.DIAGNOSIS_ID" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.DIAGNOSIS_ID" ]
           }
         } ]
       }
@@ -69,7 +69,7 @@
           "logicalTableSource" : "HLP_ADMISSIONS_FACT",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleAppDatabase.WEBINAR.HLP_ADMISSIONS_FACT.CHARGED_AMT" ]
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.CHARGED_AMT" ]
           }
         } ]
       },
@@ -82,19 +82,19 @@
       "name" : "HLP_ADMISSIONS_FACT",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:SampleAppDatabase.WEBINAR.HLP_ADMISSIONS_FACT" ]
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
     } ],
     "joins" : [ {
-      "rightTable" : "logicalTable:Patient Diagnosis Model.Dim - Diagnosis",
+      "rightTable" : "logicalTable:Patient Diagnosis Model.Dim - Patients",
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"
     }, {
-      "rightTable" : "logicalTable:Patient Diagnosis Model.Dim - Patients",
+      "rightTable" : "logicalTable:Patient Diagnosis Model.Dim - Diagnosis",
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"

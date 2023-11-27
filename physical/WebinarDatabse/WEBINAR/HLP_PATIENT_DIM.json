@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "HLP_PATIENT_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PATIENT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "PATIENT_FIRST_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PATIENT_LAST_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "ADDRESS",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ZIPCODE",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

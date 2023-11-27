@@ -1,0 +1,55 @@
+{
+  "physicalTable" : {
+    "name" : "HLP_ADMISSIONS_FACT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADMISSIONS_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ADMISSION_DATE",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "PATIENT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DIAGNOSIS_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "CHARGED_AMT",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.PATIENT_ID",
+        "rightColumn" : "physicalColumn:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM.PATIENT_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:WebinarDatabse.WEBINAR.HLP_DIAGNOSES_DIM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT.DIAGNOSIS_ID",
+        "rightColumn" : "physicalColumn:WebinarDatabse.WEBINAR.HLP_DIAGNOSES_DIM.DIAGNOSIS_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}
