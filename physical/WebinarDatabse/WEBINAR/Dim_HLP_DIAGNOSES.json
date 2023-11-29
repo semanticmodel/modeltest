@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_HLP_DIAGNOSES",
+    "sourceTable" : "physicalTable:WebinarDatabse.WEBINAR.HLP_DIAGNOSES_DIM",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES.DIAGNOSIS_ID",
+        "rightColumn" : "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE.DIAGNOSIS_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

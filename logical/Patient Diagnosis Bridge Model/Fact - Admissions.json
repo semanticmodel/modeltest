@@ -1,0 +1,109 @@
+{
+  "logicalTable" : {
+    "name" : "Fact - Admissions",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "ADMISSIONS ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_HLP_ADMISSIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.ADMISSIONS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ADMISSION DATE",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_HLP_ADMISSIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.ADMISSION_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PATIENT ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_HLP_ADMISSIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.PATIENT_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIAGNOSIS ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_HLP_ADMISSIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.DIAGNOSIS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CHARGED AMT",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_HLP_ADMISSIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.CHARGED_AMT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "New Charged Amount",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "sum(distinct(%1 *%2))",
+          "expressionObjects" : [ "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.CHARGED AMT", "logicalColumn:Patient Diagnosis Bridge Model.Dim - Diagnosis Grade.WEIGHTING" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact_HLP_ADMISSIONS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Patient Diagnosis Bridge Model.Dim - Patients",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:Patient Diagnosis Bridge Model.Dim - Diagnosis Grade",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

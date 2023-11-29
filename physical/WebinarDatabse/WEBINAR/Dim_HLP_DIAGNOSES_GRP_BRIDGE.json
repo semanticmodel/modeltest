@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+    "sourceTable" : "physicalTable:WebinarDatabse.WEBINAR.HLP_DIAGNOSES_GRP_BRIDGE",
+    "overrideSourceCacheSetting" : false
+  }
+}

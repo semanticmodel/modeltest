@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Patients",
+    "presentationColumns" : [ {
+      "name" : "PATIENT ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Patients.PATIENT ID"
+    }, {
+      "name" : "PATIENT FIRST NAME",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Patients.PATIENT FIRST NAME"
+    }, {
+      "name" : "PATIENT LAST NAME",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Patients.PATIENT LAST NAME"
+    }, {
+      "name" : "ADDRESS",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Patients.ADDRESS"
+    }, {
+      "name" : "ZIPCODE",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Patients.ZIPCODE"
+    } ]
+  }
+}

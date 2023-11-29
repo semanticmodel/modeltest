@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "Fact_HLP_ADMISSIONS",
+    "sourceTable" : "physicalTable:WebinarDatabse.WEBINAR.HLP_ADMISSIONS_FACT",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_PATIENT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.PATIENT_ID",
+        "rightColumn" : "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_PATIENT.PATIENT_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:WebinarDatabse.WEBINAR.Fact_HLP_ADMISSIONS.ADMISSIONS_ID",
+        "rightColumn" : "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE.ADMISSIONS_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

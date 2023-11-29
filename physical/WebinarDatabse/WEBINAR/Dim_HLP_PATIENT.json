@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_HLP_PATIENT",
+    "sourceTable" : "physicalTable:WebinarDatabse.WEBINAR.HLP_PATIENT_DIM",
+    "overrideSourceCacheSetting" : false
+  }
+}

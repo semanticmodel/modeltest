@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Admissions",
+    "presentationColumns" : [ {
+      "name" : "ADMISSIONS ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.ADMISSIONS ID"
+    }, {
+      "name" : "ADMISSION DATE",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.ADMISSION DATE"
+    }, {
+      "name" : "PATIENT ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.PATIENT ID"
+    }, {
+      "name" : "DIAGNOSIS ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.DIAGNOSIS ID"
+    }, {
+      "name" : "CHARGED AMT",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.CHARGED AMT"
+    }, {
+      "name" : "New Charged Amount",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.New Charged Amount"
+    } ]
+  }
+}

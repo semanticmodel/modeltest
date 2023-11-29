@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "HLP_DIAGNOSES_GRP_BRIDGE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADMISSIONS_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DIAGNOSIS_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "WEIGHTING",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}
