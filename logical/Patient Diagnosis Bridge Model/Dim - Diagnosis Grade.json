@@ -84,19 +84,19 @@
       }
     } ],
     "logicalTableSources" : [ {
-      "name" : "Dim_HLP_DIAGNOSES",
+      "name" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES" ]
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
     }, {
-      "name" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+      "name" : "Dim_HLP_DIAGNOSES",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE" ]
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
