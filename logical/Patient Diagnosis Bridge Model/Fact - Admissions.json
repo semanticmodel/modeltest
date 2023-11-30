@@ -79,8 +79,8 @@
       "logicalColumnSource" : {
         "derivedFrom" : "LOGICAL_COLUMNS",
         "logicalExpression" : {
-          "expressionTemplate" : "sum(distinct(%1 *%2))",
-          "expressionObjects" : [ "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.CHARGED AMT", "logicalColumn:Patient Diagnosis Bridge Model.Dim - Diagnosis Grade.WEIGHTING" ]
+          "expressionTemplate" : "sum(distinct(%1 *%2 ))",
+          "expressionObjects" : [ "logicalColumn:Patient Diagnosis Bridge Model.Fact - Admissions.CHARGED AMT", "logicalColumn:Patient Diagnosis Bridge Model.Dim - Group Bridge.WEIGHTING" ]
         }
       }
     } ],
@@ -100,7 +100,7 @@
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"
     }, {
-      "rightTable" : "logicalTable:Patient Diagnosis Bridge Model.Dim - Diagnosis Grade",
+      "rightTable" : "logicalTable:Patient Diagnosis Bridge Model.Dim - Group Bridge",
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"

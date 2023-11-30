@@ -3,11 +3,11 @@
     "name" : "Patient Bridge SA",
     "sourceBusinessModel" : "businessModel:Patient Diagnosis Bridge Model",
     "tableOrder" : [ {
-      "name" : "presentationTable:Patient Bridge SA.Group Diagnosis"
-    }, {
       "name" : "presentationTable:Patient Bridge SA.Patients"
     }, {
       "name" : "presentationTable:Patient Bridge SA.Admissions"
+    }, {
+      "name" : "presentationTable:Patient Bridge SA.Group Bridge"
     } ]
   }
 }

@@ -1,0 +1,103 @@
+{
+  "logicalTable" : {
+    "name" : "Dim - Group Bridge",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "ADMISSIONS ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE.ADMISSIONS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIAGNOSIS ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE.DIAGNOSIS_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim_HLP_DIAGNOSES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES.DIAGNOSIS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WEIGHTING",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE.WEIGHTING" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIAGNOSIS NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_HLP_DIAGNOSES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES.DIAGNOSIS_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIAGNOSIS DATE",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_HLP_DIAGNOSES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES.DIAGNOSIS_DATE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_HLP_DIAGNOSES_GRP_BRIDGE",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES_GRP_BRIDGE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "Dim_HLP_DIAGNOSES",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:WebinarDatabse.WEBINAR.Dim_HLP_DIAGNOSES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "DIAGNOSIS ID" ]
+  }
+}

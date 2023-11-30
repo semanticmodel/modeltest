@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Group Bridge",
+    "presentationColumns" : [ {
+      "name" : "ADMISSIONS ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Group Bridge.ADMISSIONS ID"
+    }, {
+      "name" : "DIAGNOSIS ID",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Group Bridge.DIAGNOSIS ID"
+    }, {
+      "name" : "WEIGHTING",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Group Bridge.WEIGHTING"
+    }, {
+      "name" : "DIAGNOSIS NAME",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Group Bridge.DIAGNOSIS NAME"
+    }, {
+      "name" : "DIAGNOSIS DATE",
+      "sourceLogicalColumn" : "logicalColumn:Patient Diagnosis Bridge Model.Dim - Group Bridge.DIAGNOSIS DATE"
+    } ]
+  }
+}
